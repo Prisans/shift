@@ -1,0 +1,85 @@
+.home-container{
+    width: 100%;
+    height: 100vh;
+    background: rgba(240,240,240,1);
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+.dot{
+    width: 12px;
+    height: 12px;
+    background: red;
+    border-radius: 50%;
+}
+
+.home-nav{
+    width: 95%;
+    height: 20vh;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-nav .nav-logo p{
+    font-size: 1vw;
+}
+
+.nav-logo p:hover{
+    cursor: pointer;
+}
+
+.nav-navbar{
+    /* background: red; */
+    margin-top: 2rem;
+}
+
+
+.nav-navbar ul li{
+    list-style: none;
+    font-size: 1vw;
+    padding-bottom: 5px;
+    transition: .5s ease;
+}
+
+.nav-navbar ul li:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.home-content{
+    width: 95%;
+    height: 80vh;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    top: 1rem;
+    left: 4rem;
+    position: relative;
+}
+
+.home-content h1{
+    font-size: 11.227vw;
+    font-weight: 100;
+    line-height: 8.5vw;
+}
+
+.home-content h1 span:nth-child(1){
+    font-family: "Prisans";
+}
+.home-content h1 span:nth-child(3){
+    font-family: "Hanu";
+    position: absolute;
+    font-size: 10vw;
+    left: 7rem;
+    
+}
+.home-content h1 span:nth-child(5){
+    font-family: "Prisans";
+    
+}
