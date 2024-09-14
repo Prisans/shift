@@ -12,11 +12,27 @@ const Home = () => {
     })
   }
 
-  return (
-    <div className="home-container" onMouseMove={handleMouseMove}>
-      <div className="dot">
+  const handleMouseEnter = ()=>{
+    gsap.to(".dot",{
+      scale:12,
+      duration:0.5,
+      background : " #C724B1",
+      filter: "blur(1px)"
+    })
+  }
 
-      </div>
+  const handleMouseLeave = ()=>{
+    gsap.to(".dot",{
+      scale:1,
+      duration:0.5,
+      background : "red",
+    })
+  }
+
+  return (
+   <> <div className="dot"></div>
+    <div className="home-container" onMouseMove={handleMouseMove}>
+      
 
         <div className="home-nav">
 
@@ -35,10 +51,11 @@ const Home = () => {
 
         </div>
 
-        <div className="home-content">
-            <h1><span>EXPLORING</span> <br /> <span>THE SHIFT</span> <br /> <span>OF TODAY</span></h1>
+        <div className="home-content" >
+            <h1 onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><span>EXPLORING</span> <br /> <span>THE SHIFT</span> <br /> <span>OF TODAY</span></h1>
         </div>
     </div>
+    </>
   )
 }
 
