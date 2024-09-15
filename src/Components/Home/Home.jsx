@@ -4,21 +4,19 @@ import gsap from 'gsap'
 
 const Home = () => {
 
-  const handleMouseMove = (e)=>{
-    gsap.to(".dot",{
-      x:e.clientX,
-      y:e.clientY,
-      duration:0.5,
-    })
-  }
+  
 
   const handleMouseEnter = ()=>{
     gsap.to(".dot",{
-      scale:12,
+      scale:9,
       duration:0.5,
-      background : " #C724B1",
-      filter: "blur(1px)"
+      background : "rgba(255, 255, 255, 0.1)",
+      backdropFilter:"blur(5px)",
+      webkitBackdropFilter: "blur(10px)",
+      borderRadius:"15px",
+      // border: "1px solid rgba(255, 255, 255, 0.2)"
     })
+
   }
 
   const handleMouseLeave = ()=>{
@@ -30,8 +28,8 @@ const Home = () => {
   }
 
   return (
-   <> <div className="dot"></div>
-    <div className="home-container" onMouseMove={handleMouseMove}>
+   <> 
+    <div className="home-container">
       
 
         <div className="home-nav">
@@ -52,7 +50,7 @@ const Home = () => {
         </div>
 
         <div className="home-content" >
-            <h1 onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><span>EXPLORING</span> <br /> <span>THE SHIFT</span> <br /> <span>OF TODAY</span></h1>
+            <h1 onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className='h1-text'><span>EXPLORING</span> <br /> <span>THE SHIFT</span> <br /> <span>OF TODAY</span></h1>
         </div>
     </div>
     </>

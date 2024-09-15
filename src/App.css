@@ -1,0 +1,19 @@
+.dot {
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    pointer-events: none;
+    z-index: 100; /* Reduced z-index to prevent covering other components */
+  }
+  
+  .app-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 1; /* Ensure the components inside the container have a higher z-index than the dot */
+  }
+  
+  /* Ensure HomeContent is visible */
+  

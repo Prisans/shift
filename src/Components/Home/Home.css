@@ -9,13 +9,14 @@
     align-items: center;
 }
 
-.dot{
+/* .dot{
     width: 10px;
     height: 10px;
     position: absolute;
     background: red;
     border-radius: 50%;
-}
+    
+} */
 
 .home-nav{
     width: 95%;
@@ -69,6 +70,12 @@
     font-size: 11.227vw;
     font-weight: 100;
     line-height: 8.5vw;
+    /* background: red; */
+    height: 50vh;
+}
+
+.home-content h1:hover{
+    cursor: none;
 }
 
 .home-content h1 span:nth-child(1){
