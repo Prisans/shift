@@ -1,51 +1,78 @@
-.project-container{
+.project-container {
     width: 100%;
     height: 100vh;
-    background: white;
-}
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .project-upper-container {
+    width: 100%;
+    height: 50vh;
+    /* background: red; */
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+  }
 
-.project-upper-container{
+  .project-upper-container button{
+    font-size: .905vw;
+    background: black;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+
+  .project-upper-container button:hover{
+    cursor: pointer;
+  }
+  
+  .project-lower-container {
+    border-top: 1px solid rgba(0, 0, 0, 0.326);
+    overflow: hidden; /* Hide the overflow for continuous scrolling */
     width: 100%;
     height: 40vh;
-    /* background: red; */
+  }
+  
+  .project-lower-text {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12rem;
-    text-align: center;
-}
+    white-space: nowrap; /* Prevent the text from breaking into new lines */
+    position: relative;
+  }
 
-.project-upper-container p{
-    padding-top: 2rem;
-}
-
-.project-upper-container button{
-    border: none;
-    background: none;
-
-}
-
-.project-lower-container{
-    border-top: 1px solid #0000004a;
-    width: 100%;
-    height: 60vh;
-}
-
-.project-lower-text{
-    width: 100%;
-    height: 60vh;
-    /* background: red; */
+  .project-lower-text-two {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
+    white-space: nowrap; /* Prevent the text from breaking into new lines */
+    position: relative;
+  }
+  
+  .text-wrapper {
+    display: flex; /* Ensure both texts are on the same line */
+    width: 200%; /* Since we have two text items, the width is 200% of the container */
+  }
 
+  .text-wrapper-two {
+    display: flex; /* Ensure both texts are on the same line */
+    width: 200%; /* Since we have two text items, the width is 200% of the container */
+  }
+  
+  .up-txt {
+    min-width: 100%; /* Each text takes up 100% of the width of the container */
+    font-size: 5.20vw;
+    padding-right: 50px; /* Optional space between repeated 
+    texts */
 
+    font-family: "Prisans";
+  }
 
-.project-lower-container h2{
-    font-size: 5vw;
-
-}
-
+  .low-txt {
+    min-width: 100%; /* Each text takes up 100% of the width of the container */
+    font-size: 5.20vw;
+    font-family: "Prisans";
+    padding-right: 50px; /* Optional space between repeated texts */
+  }
+  
