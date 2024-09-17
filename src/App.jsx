@@ -3,6 +3,7 @@ import Home from './Components/Home/Home'
 import './App.css'
 import HomeContent from './Components/HomeContent/HomeContent'
 import gsap from 'gsap'
+import Project from './Components/Project/Project'
 
 const App = () => {
 
@@ -21,6 +22,7 @@ const App = () => {
 
       <Home />
       <HomeContent/>
+      <Project/>
     </div>
     </>
   )

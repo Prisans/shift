@@ -29,6 +29,7 @@
 
 .home-nav .nav-logo p{
     font-size: 1vw;
+    /* position: fixed; */
 }
 
 .nav-logo p:hover{

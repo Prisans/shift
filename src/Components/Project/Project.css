@@ -1,0 +1,51 @@
+.project-container{
+    width: 100%;
+    height: 100vh;
+    background: white;
+}
+
+.project-upper-container{
+    width: 100%;
+    height: 40vh;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12rem;
+    text-align: center;
+}
+
+.project-upper-container p{
+    padding-top: 2rem;
+}
+
+.project-upper-container button{
+    border: none;
+    background: none;
+
+}
+
+.project-lower-container{
+    border-top: 1px solid #0000004a;
+    width: 100%;
+    height: 60vh;
+}
+
+.project-lower-text{
+    width: 100%;
+    height: 60vh;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.project-lower-container h2{
+    font-size: 5vw;
+
+}
+
