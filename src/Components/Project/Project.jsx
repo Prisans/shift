@@ -13,7 +13,7 @@ const Project = () => {
       { x: '0%' }, // Start position
       {
         x: '-100%', // Move it to the left by 100% of the container width
-        duration: 30, // Control the speed
+        duration: 47, // Control the speed
         ease: 'linear', // Consistent scrolling speed
         repeat: -1, // Repeat indefinitely
       }
@@ -29,7 +29,7 @@ const Project = () => {
       { x: '-100%' }, // Start position
       {
         x: '0%', // Move it to the left by 100% of the container width
-        duration: 30, // Control the speed
+        duration: 47, // Control the speed
         ease: 'linear', // Consistent scrolling speed
         repeat: -1, // Repeat indefinitely
       }
@@ -61,10 +61,10 @@ const Project = () => {
         <div className="project-lower-text-two">
           <div className="text-wrapper-two">
             <h2 className="low-txt">
-              SHIFT PRODUCE DIRECTION DESIGN TECHNOLOGY CONSULTING BRANDING STRATEGY
+            SPORTS EVENT PRODUCT ENTERTAINTMENT FASHION MUSIC FOOD EDUCATION SPACE
             </h2>
             <h2 className="low-txt">
-              SHIFT PRODUCE DIRECTION DESIGN TECHNOLOGY CONSULTING BRANDING STRATEGY
+              SPORTS EVENT PRODUCT ENTERTAINTMENT FASHION MUSIC FOOD EDUCATION SPACE
             </h2>
           </div>
         </div>
