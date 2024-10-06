@@ -67,7 +67,7 @@ const App = () => {
           scrub: true,
         }
       },  // Starting state: rotated by 90 degrees on z-axis and hidden
-      { rotationX: 0, opacity: 1, duration: 1.5, ease: "power3.out" , duration : 1,
+      { rotationX: 0, opacity: 1, duration: 1.5, ease: "power3.out" , 
       scrollTrigger: {
         trigger: ".footer-container",  // Element that triggers the animation
         start: "top 50%",                    // When the top of the element reaches 80% of the viewport
